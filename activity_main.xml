@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#ffccff"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="221dp"
+        android:layout_height="291dp"
+        android:layout_centerInParent="true"
+        android:text="To Do List App: Stay Organised, Get More Done"
+        android:textColor="#ff00bf"
+        android:textFontWeight="1000"
+        android:textSize="36dp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="Add Task"
+        android:textSize="32dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="80dp"
+        android:scrollbars="none">
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+    </ScrollView>
+</RelativeLayout>
